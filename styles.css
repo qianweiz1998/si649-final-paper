@@ -1,0 +1,128 @@
+/* General Reset */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire section */
+    z-index: -1; /* Sends the image behind the text */
+}
+
+.hero-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background for readability */
+    padding: 20px 0; /* Reduces padding on the sides */
+    width: 100%; /* Makes the background span the full width of the screen */
+    box-sizing: border-box; /* Ensures padding is included within the width */
+}
+
+.hero-title h1 {
+    font-size: 3em;
+    margin: 0;
+    padding: 0 10%; /* Reduces the text's margin on both sides */
+}
+
+.hero-title p {
+    font-size: 1.2em;
+    margin: 10px 0 0;
+    padding: 0 10%; /* Reduces the text's margin on both sides */
+}
+
+/* Article Formatting */
+article {
+    font-family: 'Georgia', 'Times New Roman', Times, serif; /* Professional serif font */
+    font-size: 1.05em; /* Slightly reduced text size */
+    line-height: 1.9; /* Slightly adjusted line spacing for readability */
+    margin: 60px auto; /* Center the article with generous vertical margin */
+    max-width: 1000px; /* Restrict the width for a focused, academic style */
+    padding: 0 30px; /* Comfortable padding for clean edges */
+    color: #333; /* Dark gray for softer contrast */
+    text-align: justify; /* Align text to both sides */
+    background-color: #f9f9f9; /* Light background for a clean look */
+    border: 1px solid #ddd; /* Subtle border for professionalism */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    border-radius: 10px; /* Rounded corners for a modern touch */
+}
+
+/* Header Titles */
+article h1, article h2 {
+    font-size: 1.6em; /* Slightly smaller title size */
+    color: #2c3e50; /* Deep blue-gray for emphasis */
+    margin-top: 20px; /* Space above titles */
+    margin-bottom: 15px; /* Cleaner spacing below */
+    line-height: 1.4; /* Optimal spacing for titles */
+    text-align: center; /* Center-align titles for balance */
+    text-transform: capitalize; /* Title case for professional look */
+    border-bottom: 2px solid #ccc; /* Subtle underline */
+    padding-bottom: 8px; /* Padding for separation */
+}
+
+/* Paragraphs */
+article p {
+    font-size: 1.05em; /* Slightly smaller paragraph text size */
+    margin: 18px 0; /* Increased spacing between paragraphs */
+    line-height: 1.9; /* Generous line height for readability */
+    letter-spacing: 0.4px; /* Slight letter-spacing for clean feel */
+}
+
+/* Blockquote Styling */
+article blockquote {
+    font-style: italic;
+    color: #555;
+    border-left: 5px solid #ccc;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #fdfdfd;
+}
+
+/* List Styling */
+article ul, article ol {
+    margin: 20px 0;
+    padding-left: 40px; /* Indent for lists */
+    font-size: 1.05em; /* Adjusted to match paragraph size */
+}
+
+article li {
+    margin: 10px 0;
+    line-height: 1.8;
+}
+
+/* Links */
+article a {
+    color: #007BFF; /* Professional blue for links */
+    text-decoration: none; /* Remove underline for clean look */
+}
+
+article a:hover {
+    text-decoration: underline; /* Add underline on hover for clarity */
+}
+
+
+
+.tableau-container {
+    width: 100%; /* Full width of the parent container */
+    max-width: 1000px; /* Limit the maximum width of the container */
+    height: auto; /* Maintain responsive height */
+    margin: 0 auto; /* Center the container */
+    position: relative; /* Enable scaling adjustments */
+}
+
